@@ -74,16 +74,19 @@ header {
   text-align: center;
   letter-spacing: var(--spacing);
 }
+.hero-header {
+  padding: 0 10px;
+}
 
 .hero-header h1 {
-  font-size: 2.7rem;
+  font-size: calc(1rem + 2.6vw);
 }
 .hero-header h3 {
-  font-size: 1.8rem;
+  font-size: calc(0.6rem + 2vw);
   font-weight: 300;
 }
 .hero__button {
-  font-size: 1.2rem;
+  font-size: calc(0.4rem + 1vw);
   display: flex;
   gap: 50px;
 }
@@ -243,6 +246,7 @@ header {
 }
 
 .card-coctail h4 {
+  font-size: calc(0.5rem + 0.7vh);
   padding: 10px;
   font-weight: 300;
 }
@@ -335,13 +339,13 @@ footer {
   transition: all 0.5s;
 }
 .currentTemp {
-  font-size: 0.8rem;
+  font-size: calc(0.3rem + 1vh);
   color: black;
   letter-spacing: 2px;
   font-weight: 400;
   position: absolute;
   top: 99%;
-  right: 50px;
+  right: calc(30px + 2vw);
 }
 
 .currentTemp img {

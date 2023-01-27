@@ -7,10 +7,12 @@ const footer = document.querySelector(".footer");
 const currentTemp = document.querySelector(".currentTemp");
 
 // Taking out the value and add new price with 20% discount
+let discountProcent = 20;
+
 const priceTotal = function () {
   price.forEach((arr) => {
     const actPrice = arr.innerHTML.trim().slice(1, 6);
-    const discount = (actPrice * 20) / 100;
+    const discount = (actPrice * discountProcent) / 100;
     const totalPrice = actPrice - discount;
 
     const priceElem = document.createElement("span");
